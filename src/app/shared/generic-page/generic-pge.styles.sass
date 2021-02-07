@@ -1,0 +1,50 @@
+$app-bar-height: 48px
+$section-items-padding: 12px
+$content-padding: 36px
+$drawer-width: 500px
+
+.page-background
+  background-color: #eee
+  overflow-x: hidden
+  overflow-y: hidden
+
+.app-bar-toolbar
+  display: flex
+  &:first-child
+    padding-left: $section-items-padding
+  &:last-child
+    padding-right: $section-items-padding
+
+.sub-nav-toolbar
+  &:first-child
+    padding-left: 48px
+  &:last-child
+    padding-right: 48px
+
+.app-bar-toolbar-section
+  flex-grow: 1
+
+.right-section
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.right-section-display-name
+  padding-right: 20px
+  font-size: 14px
+
+.drawer
+  z-index: 1200
+  width: $drawer-width
+
+.drawer-list
+  width: $drawer-width
+
+.page-content
+  display: flex
+  overflow-x: hidden
+  overflow-y: hidden
+  padding-top: $app-bar-height
+
+.clear-notification-button
+  padding-left: 0
